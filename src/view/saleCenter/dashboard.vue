@@ -1,6 +1,6 @@
 <template>
   <div id="dashboard">
-
+    salecenter
   </div>
 </template>
 <script>
