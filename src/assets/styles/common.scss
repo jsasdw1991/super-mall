@@ -1,4 +1,10 @@
 @import './config.scss';
+a{
+  &, a:hover, a:focus, a:active {
+    text-decoration: none;
+    color: $c-label;
+  }
+}
 
 ul{
   margin: 0;

@@ -1,6 +1,6 @@
 <template>
   <div class="slider-menu" id="sliderMenu">
-    <span class="fa fa-bars" @click="show=!show"></span>
+    <i class="fa fa-bars slider-menu-icon" @click="show=!show"></i>
     <transition name="slide-fade">
       <div class="slider-menu-panel" v-if="show">
         <div class="slider-menu-panel-mask" @click="show=!show">
