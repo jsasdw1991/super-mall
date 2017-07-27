@@ -1,14 +1,14 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 
-import MainSlider from '@/view/layout/mainSlider'
-import MainHeader from '@/view/layout/mainHeader'
-import MainFooter from '@/view/layout/mainFooter'
-import SaleHeader from '@/view/layout/saleHeader'
-import SaleFooter from '@/view/layout/saleFooter'
+const MainSlider = r => require.ensure([], () => r(require('@/view/layout/mainSlider')), 'customer')
+const MainHeader = r => require.ensure([], () => r(require('@/view/layout/mainHeader')), 'customer')
+const MainFooter = r => require.ensure([], () => r(require('@/view/layout/mainFooter')), 'customer')
+const Home = r => require.ensure([], () => r(require('@/view/customer/home')), 'customer')
 
-import Home from '@/view/customer/home'
-import * as SaleDashboard from '@/view/saleCenter/dashboard'
+const SaleHeader = r => require.ensure([], () => r(require('@/view/layout/saleHeader')), 'sale')
+const SaleFooter = r => require.ensure([], () => r(require('@/view/layout/saleFooter')), 'sale')
+const SaleDashboard = r => require.ensure([], () => r(require('@/view/saleCenter/dashboard')), 'sale')
 
 Vue.use(Router)
 
