@@ -1,7 +1,6 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 
-const MainSlider = r => require.ensure([], () => r(require('@/view/layout/mainSlider')), 'customer')
 const MainHeader = r => require.ensure([], () => r(require('@/view/layout/mainHeader')), 'customer')
 const MainFooter = r => require.ensure([], () => r(require('@/view/layout/mainFooter')), 'customer')
 const Home = r => require.ensure([], () => r(require('@/view/customer/home')), 'customer')
@@ -17,7 +16,6 @@ const baseRouter = {
   path: '/',
   components: {
     default: Home,
-    slider: MainSlider,
     header: MainHeader,
     footer: MainFooter
   }
