@@ -1,4 +1,5 @@
 const user = {
+  namespace: true,
   state: {},
   mutations: {},
   actions: {},

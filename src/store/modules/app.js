@@ -1,5 +1,6 @@
 const app = {
-  state: {},
+  state: {
+  },
   mutations: {},
   actions: {},
   getters: {}

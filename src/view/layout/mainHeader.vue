@@ -1,15 +1,21 @@
 <template>
   <div id="mainHeader">
-    header
+    <slider-menu></slider-menu>
   </div>
 </template>
+
 <script>
+import '@/assets/styles/layout/mainHeader.scss'
+
+import SliderMenu from '../component/sliderMenu'
+
 export default {
   name: 'mainHeader',
+  components: {
+    SliderMenu
+  },
   data: () => ({
 
   })
 }
 </script>
-<style lang="scss" scoped>
-</style>
