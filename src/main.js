@@ -1,5 +1,6 @@
 import 'normalize.css/normalize.css'
 import 'font-awesome/css/font-awesome.min.css'
+import '@/assets/styles/common.scss'
 import '@/assets/styles/app.scss'
 
 import Vue from 'vue'

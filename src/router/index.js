@@ -14,6 +14,7 @@ Vue.use(Router)
 // 一般用户的路由
 const baseRouter = {
   path: '/',
+  name: 'home',
   components: {
     default: Home,
     header: MainHeader,
