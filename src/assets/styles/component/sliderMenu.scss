@@ -1,6 +1,7 @@
 @import '../config.scss';
 
 .slider-menu{
+  display: inline-block;
   .slider-menu-icon{
     font-size: $fz-title;
   }
