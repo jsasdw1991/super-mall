@@ -1,4 +1,5 @@
 @import './config.scss';
+
 a{
   &, a:hover, a:focus, a:active {
     text-decoration: none;
@@ -10,4 +11,14 @@ ul{
   margin: 0;
   padding: 0;
   list-style-type: none;
+}
+
+.text-left{
+  text-align: left;
+}
+.text-center{
+  text-align: center;
+}
+.text-right{
+  text-align: right;
 }

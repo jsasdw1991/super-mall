@@ -1,6 +1,6 @@
 <template>
   <div class="slider-menu" id="sliderMenu">
-    <i :class="[ MenuIcon, 'slider-menu-icon' ]" @click="show=!show"></i>
+    <i :class="[ menuIcon, 'slider-menu-icon' ]" @click="show=!show"></i>
     <transition name="slide-fade">
       <div class="slider-menu-panel" v-if="show">
         <div class="slider-menu-panel-mask" @click="show=!show">
@@ -22,7 +22,7 @@ import '@/assets/styles/component/sliderMenu.scss'
 export default {
   name: 'sliderMenu',
   props: {
-    MenuIcon: {
+    menuIcon: {
       type: String,
       required: false,
       default: 'fa fa-bars'
