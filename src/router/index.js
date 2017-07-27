@@ -1,6 +1,7 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 
+import MainSlider from '@/view/layout/mainSlider'
 import MainHeader from '@/view/layout/mainHeader'
 import MainFooter from '@/view/layout/mainFooter'
 import SaleHeader from '@/view/layout/saleHeader'
@@ -16,6 +17,7 @@ const baseRouter = {
   path: '/',
   components: {
     default: Home,
+    slider: MainSlider,
     header: MainHeader,
     footer: MainFooter
   }
