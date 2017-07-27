@@ -1,4 +1,5 @@
 const product = {
+  namespace: true,
   state: {},
   mutations: {},
   actions: {},
