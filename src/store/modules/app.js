@@ -1,16 +1,18 @@
-import brandApi from '../../config/api/brand'
-// import Query from '../../config/query'
+import appApi from '../../config/api/app'
 
 const app = {
   state: {
-    currentBrand: '',
-    currentBrandSetting: ''
+    currentBrand: localStorage.getItem('currentBrand'),
+    currentBrandSetting: localStorage.getItem('currentBrandSetting')
   },
   mutations: {
     GET_APP_SETTING: (state, brandId) => {
-      Promise.all([brandApi.getBrand(brandId), brandApi.getBrandSetting(brandId)])
-        .then(([brand, brandSetting]) => {
-          console.log(brand, brandSetting)
+      appApi.getAppSetting(brandId)
+        .then((response) => {
+          state.currentBrand = response[0].brand
+          state.currentBrandSetting = response[0].brandSetting
+          localStorage.setItem('currentBrand', response[0].brand)
+          localStorage.setItem('currentBrandSetting', response[1].brandSetting)
         })
     }
   },

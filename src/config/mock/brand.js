@@ -9,13 +9,19 @@ const brandTemplete = {
   'introduction': '@cparagraph(2)'
 }
 
+const brandSettingTemplete = {
+  'id': '@integer(1, 100)',
+  'mainColor': '@color()'
+}
+
 const brand = Mock.mock(brandTemplete)
+const brandSetting = Mock.mock(brandSettingTemplete)
 
 function getBrand (config) {
   return { code: 200, brand: brand }
 }
 function getBrandSetting (config) {
-  return { code: 200, brand: brand }
+  return { code: 200, brandSetting: brandSetting }
 }
 
 export default { getBrand, getBrandSetting }
