@@ -8,7 +8,7 @@
   align-items: center;
   position: fixed;
   top: 0;
-  box-shadow: inset 0px -2px  #333;
+  box-shadow: inset 0 -2px #333;
 
   .left,
   .right {
@@ -27,7 +27,7 @@
     width: $percent-50;
     height: $size-20;
 
-    img{
+    img {
       width: 100%;
       height: 100%;
     }
