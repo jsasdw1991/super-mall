@@ -14,9 +14,9 @@ const config = {
 }
 
 var Query = axios.create(config)
-Query.defaults.headers.post['Content-Type']='application/x-www-form-urlencoded';
+Query.defaults.headers.post['Content-Type'] = 'application/x-www-form-urlencoded'
 
-//添加请求拦截器
+// 添加请求拦截器
 Query.interceptors.request.use((config) => {
   // if (store.state.token) {
   //   config.headers.Authorization = `token ${store.state.token}`
@@ -26,9 +26,9 @@ Query.interceptors.request.use((config) => {
   return Promise.reject(error)
 })
 
-//添加响应拦截器
+// 添加响应拦截器
 Query.interceptors.response.use((response) => {
-  return response.data;
+  return response.data
 }, (error) => {
   // if (error.response) {
   //   switch (error.response.status) {

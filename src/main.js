@@ -3,6 +3,7 @@ import 'font-awesome/css/font-awesome.min.css'
 import '@/assets/styles/iconfont.css'
 import '@/assets/styles/common.scss'
 import '@/assets/styles/app.scss'
+import './config/mock'
 
 import Vue from 'vue'
 import App from './App'

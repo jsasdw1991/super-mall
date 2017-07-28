@@ -11,6 +11,7 @@ export default {
   name: 'app',
   mounted: function mounted () {
     this.init()
+    this.$store.dispatch('getAppSetting', 1)
   },
   methods: {
     init: function () {
