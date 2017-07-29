@@ -7,16 +7,22 @@
 </template>
 
 <script>
+import {mapGetters} from 'vuex'
 export default {
   name: 'app',
   mounted: function mounted () {
     this.init()
-    this.$store.dispatch('getAppSetting', 1)
+    this.$store.dispatch('getBrand', 1)
   },
   methods: {
     init: function () {
       console.log('app', this.$store)
     }
+  },
+  computed: {
+    ...mapGetters([
+      'currentBrand'
+    ])
   }
 }
 </script>

@@ -14,14 +14,10 @@ const brandSettingTemplete = {
   'mainColor': '@color()'
 }
 
-const brand = Mock.mock(brandTemplete)
-const brandSetting = Mock.mock(brandSettingTemplete)
+const brand = Object.assign(Mock.mock(brandTemplete), {setting: Mock.mock(brandSettingTemplete)})
 
 function getBrand (config) {
   return { code: 200, brand: brand }
 }
-function getBrandSetting (config) {
-  return { code: 200, brandSetting: brandSetting }
-}
 
-export default { getBrand, getBrandSetting }
+export default { getBrand }

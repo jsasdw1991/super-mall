@@ -1,8 +1,8 @@
 // import Query from '../query'
-import brand from './brand'
+// import brand from './brand'
+//
+// function getAppSetting (brandId) {
+//   return Promise.all([brand.getBrand(brandId), brand.getBrandSetting(brandId)])
+// }
 
-function getAppSetting (brandId) {
-  return Promise.all([brand.getBrand(brandId), brand.getBrandSetting(brandId)])
-}
-
-export default {getAppSetting}
+// export default {getAppSetting}
