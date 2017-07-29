@@ -1,23 +1,21 @@
 @import '../config.scss';
 
-.slider-menu{
+.slider-menu {
   display: inline-block;
-  // .slider-menu-icon{
-  //   font-size: $fz-title;
-  // }
-
-  .slider-menu-panel{
+  .slider-menu-panel {
     position: fixed;
     left: 0;
     top: 0;
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.7);
-    .slider-menu-panel-mask{
+
+    .slider-menu-panel-mask {
       height: 100%;
       width: 100%;
     }
-    .slider-menu-panel-content{
+
+    .slider-menu-panel-content {
       background-color: #fff;
       width: 70%;
       height: 100%;
@@ -25,9 +23,9 @@
       top: 0;
       left: 0;
 
-      ul{
-        li{
-          a{
+      ul {
+        li {
+          a {
             color: $c-info;
             font-size: 20px;
             padding: 15px;
@@ -38,17 +36,18 @@
       }
     }
   }
-
   /* 进入和离开动画可以分别 */
   /* 设置不同的持续时间(duration)和动画函数(timing function) */
   .slide-fade-enter-active {
-    transition: all .3s ease;
+    transition: all 0.3s ease;
   }
+
   .slide-fade-leave-active {
-    transition: all .3s cubic-bezier(1.0, 0.5, 0.8, 1.0);
+    transition: all 0.3s cubic-bezier(1.0, 0.5, 0.8, 1.0);
   }
-  .slide-fade-enter, .slide-fade-leave-to
-  /* .slide-fade-leave-active 在低于 2.1.8 版本中 */ {
+  /* .slide-fade-leave-active 在低于 2.1.8 版本中 */
+  .slide-fade-enter,
+  .slide-fade-leave-to {
     transform: translateX(-100%);
     opacity: 0;
   }
