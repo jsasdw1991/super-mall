@@ -12,7 +12,10 @@ export default {
   name: 'app',
   mounted: function mounted () {
     this.init()
-    this.$store.dispatch('getBrand', 1)
+
+    if (!this.currentBrand) {
+      this.$store.dispatch('getBrand', 1)
+    }
   },
   methods: {
     init: function () {

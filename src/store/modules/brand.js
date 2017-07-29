@@ -1,9 +1,10 @@
 import brandApi from '../../config/api/brand'
+import util from '../../config/util'
 
 const brand = {
   namespace: true,
   state: {
-    appBrand: localStorage.getItem('appBrand')
+    appBrand: util.jsonToObject(localStorage.getItem('appBrand'))
   },
   getters: {
   },
@@ -11,7 +12,7 @@ const brand = {
     GET_BRAND: (state, brandId) => {
       brandApi.getBrand(brandId).then((response) => {
         state.appBrand = response.brand
-        localStorage.setItem('appBrand', response.brand)
+        localStorage.setItem('appBrand', util.objectToJson(response.brand))
       })
     }
   },
