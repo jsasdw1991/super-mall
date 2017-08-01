@@ -1,0 +1,13 @@
+@import "../config.scss";
+
+.main-footer{
+  background-color: #fafafa;
+  text-align: center;
+  padding: $size-10 0;
+
+  h1,h2,h3{
+    font-size: $fz-label;
+    color: #9E92A8;
+    margin: 0;
+  }
+}
