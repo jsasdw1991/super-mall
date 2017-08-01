@@ -1,5 +1,9 @@
 @import "./config.scss";
 
-.app{
+.app {
   padding-top: $size-60;
+
+  .app-main {
+    margin: $size-15;
+  }
 }
